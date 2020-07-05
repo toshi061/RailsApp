@@ -1,0 +1,20 @@
+<div class="center-block" style="width: 400px; text-align: center;">
+    <% if user_signed_in? %>
+        Logged in as <strong><%= current_user.email %></strong>.
+        <%= link_to "Settings", edit_user_registration_path %>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete%>
+    <% end %>
+    <h1>Welcome#index</h1>
+
+    <iframe
+        width: 400,
+        heiget: 315,
+        src="https://www.youtube.com/embed/IKO3_sWKY10",
+        frameborder: 0,
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+    ></iframe>
+
+<p>
+<%= link_to "挑戦者の方はこちら", homes_path %>
+</p>
+</div>

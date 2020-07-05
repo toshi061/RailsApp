@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Homes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Question</th>
+      <th>Content</th>
+      <th colspan="0"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= link_to "仲間A", a_index_path %></td>
+        <td><p>論理系の問題</p><td>
+      </tr>
+      <tr>
+        <td><%= link_to "仲間B", b_index_path %></td>
+        <td><p>ひらめき系</p><td>
+      <tr>
+      <tr>
+        <td><%= link_to "仲間C", c_index_path %></td>
+        <td><p>クロスワード</p><td>
+      <tr>
+      <tr>
+        <td><%= link_to "仲間D", b_index_path %></td>
+        <td><p>実験</p><td>
+      <tr><tr>
+        <td><%= link_to "仲間E", b_index_path %></td>
+        <td><p>体育</p><td>
+      <tr>
+
+      <tr><tr>
+        <td><%= link_to "ラスト問題", correct_index_path %></td>
+        <td><p>全て解いてから挑戦してね</p><td>
+      <tr>
+
+
+  </tbody>
+  
+</table>
+
+<br>
+
+<%= link_to 'New Home', new_home_path %>
